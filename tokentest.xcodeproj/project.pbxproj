@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D194DA11AA57CCB002D900C /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D194DA01AA57CCB002D900C /* ViewController2.swift */; };
 		9D33D90B1AA141F900B80056 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D33D90A1AA141F900B80056 /* AppDelegate.swift */; };
 		9D33D90D1AA141F900B80056 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D33D90C1AA141F900B80056 /* ViewController.swift */; };
 		9D33D9101AA141F900B80056 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D33D90E1AA141F900B80056 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9D194DA01AA57CCB002D900C /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController2.swift; path = ../ViewController2.swift; sourceTree = "<group>"; };
 		9D33D9051AA141F900B80056 /* tokentest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tokentest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D33D9091AA141F900B80056 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D33D90A1AA141F900B80056 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				9D33D90A1AA141F900B80056 /* AppDelegate.swift */,
+				9D194DA01AA57CCB002D900C /* ViewController2.swift */,
 				9D33D90C1AA141F900B80056 /* ViewController.swift */,
 				9D33D90E1AA141F900B80056 /* Main.storyboard */,
 				9D33D9111AA141F900B80056 /* Images.xcassets */,
@@ -214,6 +217,7 @@
 			files = (
 				9D33D90D1AA141F900B80056 /* ViewController.swift in Sources */,
 				9D33D90B1AA141F900B80056 /* AppDelegate.swift in Sources */,
+				9D194DA11AA57CCB002D900C /* ViewController2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +411,7 @@
 				9D33D9261AA141FA00B80056 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9D33D9271AA141FA00B80056 /* Build configuration list for PBXNativeTarget "tokentestTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +420,7 @@
 				9D33D9291AA141FA00B80056 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
