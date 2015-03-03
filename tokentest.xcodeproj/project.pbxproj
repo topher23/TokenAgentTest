@@ -32,7 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9D194DA01AA57CCB002D900C /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController2.swift; path = ../ViewController2.swift; sourceTree = "<group>"; };
+		9D194DA01AA57CCB002D900C /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		9D194DA61AA59711002D900C /* ColViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColViewCell.swift; sourceTree = "<group>"; };
 		9D194DAA1AA59DCF002D900C /* bt4u.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bt4u.jpg; path = images/bt4u.jpg; sourceTree = "<group>"; };
 		9D194DAB1AA59DCF002D900C /* dining.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = dining.jpg; path = images/dining.jpg; sourceTree = "<group>"; };
