@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		9D194DA11AA57CCB002D900C /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D194DA01AA57CCB002D900C /* ViewController2.swift */; };
+		9D194DA71AA59711002D900C /* ColViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D194DA61AA59711002D900C /* ColViewCell.swift */; };
+		9D194DAE1AA59DCF002D900C /* bt4u.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D194DAA1AA59DCF002D900C /* bt4u.jpg */; };
+		9D194DAF1AA59DCF002D900C /* dining.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D194DAB1AA59DCF002D900C /* dining.jpg */; };
+		9D194DB01AA59DCF002D900C /* hspa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D194DAC1AA59DCF002D900C /* hspa.jpg */; };
+		9D194DB11AA59DCF002D900C /* scholar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D194DAD1AA59DCF002D900C /* scholar.jpg */; };
 		9D33D90B1AA141F900B80056 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D33D90A1AA141F900B80056 /* AppDelegate.swift */; };
 		9D33D90D1AA141F900B80056 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D33D90C1AA141F900B80056 /* ViewController.swift */; };
 		9D33D9101AA141F900B80056 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D33D90E1AA141F900B80056 /* Main.storyboard */; };
@@ -28,6 +33,11 @@
 
 /* Begin PBXFileReference section */
 		9D194DA01AA57CCB002D900C /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController2.swift; path = ../ViewController2.swift; sourceTree = "<group>"; };
+		9D194DA61AA59711002D900C /* ColViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColViewCell.swift; sourceTree = "<group>"; };
+		9D194DAA1AA59DCF002D900C /* bt4u.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bt4u.jpg; path = images/bt4u.jpg; sourceTree = "<group>"; };
+		9D194DAB1AA59DCF002D900C /* dining.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = dining.jpg; path = images/dining.jpg; sourceTree = "<group>"; };
+		9D194DAC1AA59DCF002D900C /* hspa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hspa.jpg; path = images/hspa.jpg; sourceTree = "<group>"; };
+		9D194DAD1AA59DCF002D900C /* scholar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = scholar.jpg; path = images/scholar.jpg; sourceTree = "<group>"; };
 		9D33D9051AA141F900B80056 /* tokentest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tokentest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D33D9091AA141F900B80056 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D33D90A1AA141F900B80056 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +93,7 @@
 				9D194DA01AA57CCB002D900C /* ViewController2.swift */,
 				9D33D90C1AA141F900B80056 /* ViewController.swift */,
 				9D33D90E1AA141F900B80056 /* Main.storyboard */,
+				9D194DA61AA59711002D900C /* ColViewCell.swift */,
 				9D33D9111AA141F900B80056 /* Images.xcassets */,
 				9D33D9131AA141FA00B80056 /* LaunchScreen.xib */,
 				9D33D9081AA141F900B80056 /* Supporting Files */,
@@ -93,6 +104,10 @@
 		9D33D9081AA141F900B80056 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9D194DAA1AA59DCF002D900C /* bt4u.jpg */,
+				9D194DAB1AA59DCF002D900C /* dining.jpg */,
+				9D194DAC1AA59DCF002D900C /* hspa.jpg */,
+				9D194DAD1AA59DCF002D900C /* scholar.jpg */,
 				9D33D9091AA141F900B80056 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -196,7 +211,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D33D9101AA141F900B80056 /* Main.storyboard in Resources */,
+				9D194DB11AA59DCF002D900C /* scholar.jpg in Resources */,
+				9D194DB01AA59DCF002D900C /* hspa.jpg in Resources */,
 				9D33D9151AA141FA00B80056 /* LaunchScreen.xib in Resources */,
+				9D194DAF1AA59DCF002D900C /* dining.jpg in Resources */,
+				9D194DAE1AA59DCF002D900C /* bt4u.jpg in Resources */,
 				9D33D9121AA141F900B80056 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D33D90D1AA141F900B80056 /* ViewController.swift in Sources */,
+				9D194DA71AA59711002D900C /* ColViewCell.swift in Sources */,
 				9D33D90B1AA141F900B80056 /* AppDelegate.swift in Sources */,
 				9D194DA11AA57CCB002D900C /* ViewController2.swift in Sources */,
 			);

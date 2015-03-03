@@ -8,13 +8,47 @@
 
 import UIKit
 
-class ViewController2: UIViewController {
 
+class ViewController2: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+
+    //these will eventually be stored in the server and sent as needed
+    var tableData: [String] = ["Dining", "H SPA", "Scholar", "BT4U"]
+    var tableImages: [String] = ["dining.jpg", "hspa.jpg", "scholar.jpg", "bt4u.jpg"]
+    
+    @IBOutlet var collV: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        collV!.dataSource = self
+        collV!.delegate = self
         // Do any additional setup after loading the view.
     }
+    
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return tableData.count
+    }
+    
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        let cell: ColViewCell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as ColViewCell
+        cell.lblCell.text = tableData[indexPath.row]
+        cell.imgCell.image = UIImage(named: tableImages[indexPath.row])
+        return cell
+    }
+    
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        let cell: ColViewCell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as ColViewCell
+        
+        if cell.switchCell.on {
+            cell.switchCell.setOn(false, animated: true)
+        }
+        else {
+            cell.switchCell.setOn(true, animated: true)
+        }
+        
+    }
+    
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
