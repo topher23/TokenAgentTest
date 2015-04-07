@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Lw5-l7-ec4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Lw5-l7-ec4">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -26,7 +26,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Select Service Above:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kc4-YI-DXF">
                                 <rect key="frame" x="216" y="164" width="168" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lhH-3O-BkM">
@@ -68,7 +68,7 @@
             </objects>
             <point key="canvasLocation" x="46" y="343"/>
         </scene>
-        <!--View Controller2-->
+        <!--Services that can be authenticated:-->
         <scene sceneID="pcf-eo-cf8">
             <objects>
                 <viewController id="B2R-dJ-8TK" customClass="ViewController2" customModule="tokentest" customModuleProvider="target" sceneMemberID="viewController">
@@ -80,9 +80,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Aar-Gd-ruD">
-                                <rect key="frame" x="0.0" y="100" width="600" height="536"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Aar-Gd-ruD">
+                                <rect key="frame" x="0.0" y="64" width="600" height="470"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="c50-6J-hqM">
                                     <size key="itemSize" width="305" height="155"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -100,20 +100,21 @@
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="90j-Fr-Mqo">
                                                     <rect key="frame" x="8" y="70" width="283" height="68"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DOh-Dw-JWq">
-                                                    <rect key="frame" x="73" y="27" width="218" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ueM-fM-m3n">
                                                     <rect key="frame" x="8" y="24" width="51" height="31"/>
                                                 </switch>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lJa-WP-80j">
+                                                    <rect key="frame" x="65" y="26" width="232" height="30"/>
+                                                    <state key="normal" title="Press here to log into ">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                </button>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <connections>
+                                            <outlet property="btnCell" destination="lJa-WP-80j" id="aAB-Gp-Jy6"/>
                                             <outlet property="imgCell" destination="90j-Fr-Mqo" id="55U-H3-cDd"/>
-                                            <outlet property="lblCell" destination="DOh-Dw-JWq" id="sTy-cj-AuL"/>
                                             <outlet property="switchCell" destination="ueM-fM-m3n" id="04B-7n-hZ2"/>
                                         </connections>
                                     </collectionViewCell>
@@ -125,7 +126,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="Aar-Gd-ruD" secondAttribute="trailing" constant="-16" id="1Af-Wa-1su"/>
                             <constraint firstItem="Aar-Gd-ruD" firstAttribute="top" secondItem="wBd-bN-eMz" secondAttribute="bottom" constant="100" id="4wf-0Q-A1I"/>
                             <constraint firstAttribute="bottomMargin" secondItem="Aar-Gd-ruD" secondAttribute="bottom" constant="-36" id="P6J-q4-wBy"/>
-                            <constraint firstItem="Aar-Gd-ruD" firstAttribute="top" secondItem="wBd-bN-eMz" secondAttribute="bottom" constant="36" id="aTE-Gb-0q8"/>
+                            <constraint firstItem="Aar-Gd-ruD" firstAttribute="top" secondItem="wBd-bN-eMz" secondAttribute="bottom" constant="-50" id="aTE-Gb-0q8"/>
                             <constraint firstItem="Aar-Gd-ruD" firstAttribute="leading" secondItem="5Iy-WN-mCM" secondAttribute="leadingMargin" constant="-16" id="mLp-br-nG4"/>
                         </constraints>
                         <variation key="default">
@@ -134,13 +135,14 @@
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" title="Services that can be authenticated:" id="I3n-2g-CsG"/>
                     <connections>
                         <outlet property="collV" destination="Aar-Gd-ruD" id="hpe-Wi-aBr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="akv-cG-it9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="762" y="343"/>
+            <point key="canvasLocation" x="986" y="343"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="QJJ-K7-DBD">

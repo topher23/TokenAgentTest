@@ -56,7 +56,24 @@ class ViewController: UIViewController, UIPickerViewDataSource,UIPickerViewDeleg
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         updatePage()
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+        let selection = pickerData[myPicker.selectedRowInComponent(0)]
+        var secondScene = segue.destinationViewController as ViewController2
+        if selection == "Google"{
+            secondScene.tableData = ["Maps", "Gmail", "Hangouts", "Google +"]
+        }
+        else if selection == "Virginia Tech"{
+            secondScene.tableData = ["Dining", "HSPA", "Scholar", "BT4U"]
+        }
+        else{
+            secondScene.tableData = ["Maps", "Calendar", "iTunes", "Game Center"]
+        }
+        secondScene.tableImages = ["dining.jpg", "hspa.jpg", "scholar.jpg", "bt4u.jpg"]
 
-
+        
+    }
 }
 

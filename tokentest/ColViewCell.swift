@@ -10,7 +10,6 @@ import UIKit
 
 class ColViewCell: UICollectionViewCell {
     @IBOutlet var imgCell: UIImageView!
-    @IBOutlet var lblCell: UILabel!
     @IBOutlet var switchCell: UISwitch!
-    
+    @IBOutlet weak var btnCell: UIButton!
 }
